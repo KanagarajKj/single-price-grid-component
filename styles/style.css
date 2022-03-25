@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+:root{
+    --clr-Cyan: hsl(179, 62%, 43%);
+    --clr-Bright-Yellow: hsl(71, 73%, 54%);
+    --clr-Light-Gray: hsl(204, 43%, 93%);
+    --clr-Grayish-Blue: hsl(218, 22%, 67%);
+    --clr-font-main: 'Karla', sans-serif;
+}
+
+body{
+    font-family:var(--clr-font-main);
+    background-color: var(--clr-Light-Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+
+.card{
+    width: 85%;
+    margin-top: 5rem;
+}
+
+.card_community, .card_subscription, .card_why-us{
+    padding: 1.75rem 2rem;
+}
+
+/* card_community */
+
+.card_community {
+    background-color: white;
+    text-align: left;
+    border-radius:10px 10px 0 0;
+}
+
+.card_community h1{
+    font-size: 1.2rem;
+    color: hsla(179, 90%, 43%);
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.card_community h2{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: var(--clr-Bright-Yellow);
+}
+.card_community p{
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+    color: var(--clr-Grayish-Blue);
+    font-weight: 500;
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+
+/* card_subscription */
+
+.card_subscription{
+    background-color: var(--clr-Cyan);
+    text-align: left;
+}
+
+.card_subscription h2{
+    color: var(--clr-Light-Gray);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card_subscription p:nth-of-type(1){
+    font-size: 2rem;
+    color: var(--clr-Light-Gray);
+    margin-bottom: 0.3rem;
+}
+
+.card_subscription p:nth-of-type(1) span{
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    opacity: 0.5;
+}
+.card_subscription p:nth-of-type(2){
+    font-size: 0.9rem;
+    color: var(--clr-Light-Gray);
+}
+
+.card_subscription button{
+    background-color: var(--clr-Bright-Yellow);
+    color: var(--clr-Light-Gray);
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgb(33, 130, 128, 0.85);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* card_why-us */
+.card_why-us{
+    align-items: left;
+    background-color:rgba(42, 178, 175,0.75);
+    color: var(--clr-Light-Gray);
+    text-align: left;
+    border-radius: 0 0 10px 10px;
+}
+
+.card_why-us h2{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card_why-us ul li{
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    opacity: 0.7;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:1440px){
+
+    
+}
