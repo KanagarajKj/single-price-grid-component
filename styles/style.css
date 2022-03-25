@@ -26,7 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 li{
@@ -35,10 +35,11 @@ li{
 
 .card{
     width: 85%;
+    margin: 4rem auto;
 }
 
 .card_community, .card_subscription, .card_why-us{
-    padding: 1.75rem 2rem;
+    padding: 1.75rem ;
 }
 
 /* card_community */
@@ -139,7 +140,7 @@ li{
 
 /* Responsive */
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1440px){
 
     body{
         min-height: 100vh;
@@ -186,6 +187,10 @@ li{
       border-radius: 0 0 0 10px;
   }
 
+  .card_subscription button{
+      font-size: 0.9rem;
+  }
+
    .card_why-us h2{
    font-size:1.5rem;
    }
@@ -198,5 +203,6 @@ li{
        margin-bottom:-4rem;
        border-radius: 0 0 10px 0;
    }
+
 
 }
